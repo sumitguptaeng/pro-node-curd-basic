@@ -1,0 +1,13 @@
+1. Create database in mysql = students_db
+2. create table (CREATE TABLE `students` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(255) NOT NULL,
+  `roll_no` VARCHAR(100) NOT NULL,
+  `fees` DECIMAL(10,2) NOT NULL,
+  `class` VARCHAR(100) NOT NULL,
+  `medium` VARCHAR(100) NOT NULL,
+  `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+)
